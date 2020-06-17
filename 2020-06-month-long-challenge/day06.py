@@ -19,13 +19,10 @@ class Solution:
         # front ascending
         sorted_people = sorted(people,
             key = lambda person: (-height(person), taller_in_front(person)))
-        print(people)
-        print(sorted_people)
         # Insert into the queue at the correct position
         queue = []
         for person in sorted_people:
             queue.insert(taller_in_front(person), person)
-            print(queue)
         return queue
 
 # Test
