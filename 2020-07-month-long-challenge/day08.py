@@ -20,7 +20,7 @@ class Solution:
             while low < len(nums) - 1 and high > 0:
                 a = nums[low]
                 b = nums[high]
-                if -c == a + b and i not in [low, high]:
+                if -c == a + b and i not in [low, high] and low != high:
                     triplet = sorted([a, b, c])
                     if triplet not in triplets:
                         triplets.append(triplet)
