@@ -10,6 +10,7 @@
 # containing only letters a-z or .. A . means it can represent any one letter.
 
 class WordDictionary:
+    # This is actually a Trie, with a twist
     def __init__(self):
         self.root = {}
 
@@ -27,6 +28,9 @@ class WordDictionary:
                 letter = word[i]
                 if letter != '.' and letter not in node:
                     return False
+                # Here's the twist: if the current letter is a wildcard
+                # character, replace it with every possible character at this
+                # node and carry on searching
                 if letter == '.':
                     return any([search_rec(wild + word[i+1:], node) \
                         for wild in node if wild != '#'])
