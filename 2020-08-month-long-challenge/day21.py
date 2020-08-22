@@ -26,7 +26,7 @@ class Solution:
         # return evens + odds
 
         # Even faster solution, thanks to Python list comprehensions
-        # (runtime beats 99% of submissions, memory usagfe beats 93%)
+        # (runtime beats 99% of submissions, memory usage beats 93%)
         return [n for n in A if n % 2 == 0] + [n for n in A if n % 2 != 0]
 
 # Tests
