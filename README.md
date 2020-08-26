@@ -1,3 +1,4 @@
 # LeetCode
 
-Solution for LeetCode challenges.
+Solutions for LeetCode challenges.
+
