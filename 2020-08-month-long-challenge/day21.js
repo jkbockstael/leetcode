@@ -25,7 +25,21 @@ var sortArrayByParity = function(A) {
             odds.push(number)
         }
     }
-    foo = evens.concat(odds)
-    console.log(foo)
-    return foo
+    return evens.concat(odds)
 };
+
+// Let's build a list comparison function since [a,b,c] == [d,e,f] doesn't work
+// in JavaScript
+const eq = x => y => x == y
+const range = n => [...Array(n).keys()]
+const map = fn => xs => xs.map(fn)
+const zipwith = fn => xs => ys =>
+    map(i => fn(xs[i])(ys[i]))(range(Math.min(xs.length, ys.length)))
+const all = xs => xs.every(x => x == true)
+const list_equal = xs => ys => eq(xs.length)(ys.length)
+    && all(zipwith(eq)(xs)(ys))
+
+// Tests
+console.assert(list_equal(sortArrayByParity([]))([]))
+console.assert(list_equal(sortArrayByParity([1,2]))([2,1]))
+console.assert(list_equal(sortArrayByParity([3,1,2,4]))([2,4,3,1]))
