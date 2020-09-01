@@ -24,7 +24,7 @@ class TreeNode:
 
 class Solution:
     def isValidSequence(self, root: TreeNode, arr: [int]) -> bool:
-        # This whole function coule be written as a single boolean expression,
+        # This whole function could be written as a single boolean expression,
         # but let's split it for the sake of readability
         if root is None:
             return False
