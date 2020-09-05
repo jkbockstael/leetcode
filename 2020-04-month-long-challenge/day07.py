@@ -9,7 +9,8 @@ class Solution:
     def countElements(self, arr: [int]) -> int:
         return sum(1 for x in arr if x + 1 in arr)
 
-assert Solution().countElements([1,2,3]) == 2, "[1,2,3] → 2"
-assert Solution().countElements([1,1,3,3,5,5,7,7]) == 0, "[1,1,3,3,5,5,7,7] → 0"
-assert Solution().countElements([1,3,2,3,5,0]) == 3, "[1,3,2,3,5,0] → 3"
-assert Solution().countElements([1,1,2,2]) == 2, "[1,1,2,2] → 2"
+# Tests
+assert Solution().countElements([1,2,3]) == 2
+assert Solution().countElements([1,1,3,3,5,5,7,7]) == 0
+assert Solution().countElements([1,3,2,3,5,0]) == 3
+assert Solution().countElements([1,1,2,2]) == 2

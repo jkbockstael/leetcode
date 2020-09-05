@@ -39,7 +39,7 @@ class Solution:
 
 
 
-# Test
+# Tests
 test_tree = TreeNode(1)
 test_tree.left = TreeNode(2)
 test_tree.right = TreeNode(3)

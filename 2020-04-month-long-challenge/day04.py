@@ -18,7 +18,7 @@ class Solution:
             nums.remove(0)
             nums.append(0)
 
-# modifying input is a heresy
+# Tests
 test_input = [0,1,0,3,12]
 Solution().moveZeroes(test_input)
-assert test_input == [1,3,12,0,0], "[0,1,0,3,12] → [1,3,12,0,0]"
+assert test_input == [1,3,12,0,0]

@@ -24,6 +24,6 @@ class Solution:
             return stones[0]
 
 
-# Test
+# Tests
 assert Solution().lastStoneWeight([2,7,4,1,8,1]) == 1
 assert Solution().lastStoneWeight([2,2]) == 0

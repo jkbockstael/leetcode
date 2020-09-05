@@ -75,7 +75,7 @@ class LRUCache:
         self.remove(node)
         self.append(node)
 
-# Test
+# Tests
 cache = LRUCache(2)
 cache.put(1, 1)
 cache.put(2, 2)

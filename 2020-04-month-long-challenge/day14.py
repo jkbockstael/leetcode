@@ -26,6 +26,7 @@ class Solution:
             for direction, distance in shift) % len(s)
         return s[total_shift:] + s[:total_shift]
 
+# Tests
 assert Solution().stringShift("abc", [[0,1],[1,2]]) == "cab"
 assert Solution().stringShift("abcdefg", [[1,1],[1,1],[0,2],[1,3]]) == "efgabcd"
 assert Solution().stringShift("xqgwkiqpif", [[1,4],[0,7],[0,8],[0,7],[0,6],[1,3],[0,1],[1,7],[0,5],[0,6]]) == "qpifxqgwki"

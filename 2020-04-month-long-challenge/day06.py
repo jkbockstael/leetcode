@@ -18,5 +18,6 @@ class Solution:
         sorted_groups = [sorted(group) for group in groups]
         return sorted_groups
 
+# Test
 assert Solution().groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]) ==\
     [["ate","eat","tea"],["nat","tan"],["bat"]]

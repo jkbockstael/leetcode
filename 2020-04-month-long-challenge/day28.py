@@ -42,7 +42,7 @@ class FirstUnique:
             self.map[value] = 1
             self.queue.append(value)
 
-# Test
+# Tests
 test = FirstUnique([2,3,5])
 assert test.showFirstUnique() == 2
 test.add(5)

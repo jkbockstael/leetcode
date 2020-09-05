@@ -33,7 +33,7 @@ class Solution:
                     self.walk_island(x, y)
         return island_count
 
-# Test
+# Tests
 def parse_test_grid(grid: str) -> [[str]]:
     return [[char for char in line] for line in grid.split("\n")]
 test_grid = """11110

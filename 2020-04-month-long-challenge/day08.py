@@ -38,7 +38,7 @@ def linked(items: [int]) -> ListNode:
 # Tests
 case_1 = linked([1,2,3,4,5])
 expected_1 = case_1.next.next
-assert Solution().middleNode(case_1) == expected_1, "[1,2,3,4,5] → [3,4,5]"
+assert Solution().middleNode(case_1) == expected_1
 case_2 = linked([1,2,3,4,5,6])
 expected_2 = case_2.next.next.next
-assert Solution().middleNode(case_2) == expected_2, "[1,2,3,4,5,6] → [4,5,6]"
+assert Solution().middleNode(case_2) == expected_2

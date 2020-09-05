@@ -24,5 +24,6 @@ class Solution:
             n = self.perfect_digital_invariant(n)
         return n == 1
 
-assert Solution().isHappy(19) == True, "19 → True"
-assert Solution().isHappy(20) == False, "20 → False"
+# Tests
+assert Solution().isHappy(19) == True
+assert Solution().isHappy(20) == False

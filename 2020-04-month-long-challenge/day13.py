@@ -17,7 +17,7 @@ class Solution:
                 longest = max(longest, i - counts[count])
         return longest
 
-# Test
+# Tests
 assert Solution().findMaxLength([0,1]) == 2
 assert Solution().findMaxLength([0,1,0]) == 2
 assert Solution().findMaxLength([0,0,0]) == 0

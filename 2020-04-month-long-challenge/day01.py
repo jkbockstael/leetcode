@@ -14,5 +14,6 @@ class Solution:
                 seen.append(num)
         return seen[0]
 
-assert Solution().singleNumber([2,2,1]) == 1, "[2,2,1] → 1"
-assert Solution().singleNumber([4,1,2,1,2]) == 4, "[4,1,2,1,2] → 4"
+# Tests
+assert Solution().singleNumber([2,2,1]) == 1
+assert Solution().singleNumber([4,1,2,1,2]) == 4

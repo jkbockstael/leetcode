@@ -14,5 +14,6 @@ class Solution:
             best_total = max(total, best_total)
         return best_total
 
-assert Solution().maxSubArray([-2,1,-3,4,-1,2,1,-5,4]) == 6, "[-2,1,-3,4,-1,2,1,-5,4] → 6"
-assert Solution().maxSubArray([-1]) == -1, "[-1] → -1"
+# Tests
+assert Solution().maxSubArray([-2,1,-3,4,-1,2,1,-5,4]) == 6
+assert Solution().maxSubArray([-1]) == -1
