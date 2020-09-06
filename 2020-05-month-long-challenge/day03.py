@@ -19,6 +19,7 @@ class Solution:
         available.subtract(needed)
         return all(map(lambda x: x >= 0, available.values()))
 
+# Tests
 assert Solution().canConstruct("a", "b") == False
 assert Solution().canConstruct("aa", "ab") == False
 assert Solution().canConstruct("aa", "aab") == True

@@ -10,5 +10,6 @@ class Solution:
     def countBits(self, num: int) -> [int]:
         return [len(bin(x)[2:].replace('0','')) for x in range(0, num + 1)]
 
+# Tests
 assert Solution().countBits(2) == [0,1,1]
 assert Solution().countBits(5) == [0,1,1,2,1,2]
