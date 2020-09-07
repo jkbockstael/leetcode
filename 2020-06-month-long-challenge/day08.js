@@ -15,6 +15,7 @@ var isPowerOfTwo = function(n) {
     return n > 0 && n.toString(2).split('1').length == 2
 };
 
+// Tests
 console.assert(isPowerOfTwo(1) == true)
 console.assert(isPowerOfTwo(16) == true)
 console.assert(isPowerOfTwo(218) == false)

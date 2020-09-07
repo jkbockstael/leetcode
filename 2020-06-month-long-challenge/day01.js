@@ -22,7 +22,6 @@ const invertTree = root =>
     : new TreeNode(root.val, invertTree(root.right), invertTree(root.left))
 
 // Tests
-
 let test_tree = new TreeNode(4)
 test_tree.left = new TreeNode(2)
 test_tree.right = new TreeNode(7)

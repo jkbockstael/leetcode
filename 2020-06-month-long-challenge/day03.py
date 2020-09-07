@@ -21,6 +21,6 @@ class Solution:
         return sum(cost[0] for cost in sorted_costs[:N]) \
             + sum(cost[1] for cost in sorted_costs[N:])
 
-# Test
+# Tests
 assert Solution().twoCitySchedCost([[10,20],[30,200],[400,50],[30,20]]) == 110
 assert Solution().twoCitySchedCost([[259,770],[448,54],[926,667],[184,139],[840,118],[577,469]]) == 1859

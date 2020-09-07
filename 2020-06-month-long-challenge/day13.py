@@ -24,4 +24,3 @@ class Solution:
 # Tests
 assert Solution().largestDivisibleSubset([1,2,3]) in [[1,2], [1,3]]
 assert Solution().largestDivisibleSubset([1,2,4,8]) == [1,2,4,8]
-
