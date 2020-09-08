@@ -15,7 +15,7 @@ class Solution:
         angle = abs(30.0 * hour - 5.5 * minutes)
         return min(angle, 360.0 - angle)
 
-# Test
+# Tests
 assert abs(Solution().angleClock(12,30) - 165) < 0.00001
 assert abs(Solution().angleClock(3,30) - 75) < 0.00001
 assert abs(Solution().angleClock(3,15) - 7.5) < 0.00001

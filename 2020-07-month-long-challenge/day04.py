@@ -21,7 +21,7 @@ class Solution:
             uglies.add(ugly * 5)
         return ugly
 
-# Test
+# Tests
 assert Solution().nthUglyNumber(10) == 12
 assert Solution().nthUglyNumber(1) == 1
 assert Solution().nthUglyNumber(10000) == 288325195312500000
