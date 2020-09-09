@@ -41,7 +41,7 @@ class MyHashSet:
         m = self.memory # size of output set
         return (a * key) >> (w - m)
 
-# Test
+# Tests
 hash_set = MyHashSet()
 hash_set.add(1)
 hash_set.add(2)

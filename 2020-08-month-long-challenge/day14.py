@@ -29,7 +29,7 @@ class Solution:
         else:
             return length
 
-# Test
+# Tests
 assert Solution().longestPalindrome("") == 0
 assert Solution().longestPalindrome("abc") == 1
 assert Solution().longestPalindrome("ABba") == 1
